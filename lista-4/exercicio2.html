@@ -17,6 +17,18 @@
         table {
             text-align: center;
         }
+
+        fieldset {
+            border: none;
+            padding: 0px;
+            margin: 20px 0px;
+        }
+
+        form {
+            border: thin dashed rgb(63, 63, 63);
+            padding-left: 10px;
+            padding-bottom: 20px;
+        }
     </style>
 
 </head>
@@ -148,5 +160,40 @@
             </tbody>
         </table>
     </div>
+
+    <h3>Formulário</h3>
+
+    <form>
+
+        <fieldset>
+            <legend>Nome:</legend>
+            <input type="text" name="" id="">
+        </fieldset>
+
+        <fieldset>
+            <legend>Prática Sustentável Preferida:</legend>
+            <input type="radio" name="praticaPreferida" id="">
+            <label>Reciclagem</label>
+            <input type="radio" name="praticaPreferida" id="">
+            <label>Agricultura Orgânica</label>
+            <input type="radio" name="praticaPreferida" id="">
+            <label>Uso de Energias Renováveis</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend>
+            <textarea></textarea>
+    
+        </fieldset>
+
+        <input type="button" value="Enviar Feedback">
+
+    </form>
+
+    <p>
+        Para saber mais sobre sustentabilidade, visite o <a href="https://www.institutoambiental.com.br/" target="_blank">Instituto Ambiental</a>.
+    </p>
+
 </body>
 </html>

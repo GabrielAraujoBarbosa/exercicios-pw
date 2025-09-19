@@ -15,7 +15,9 @@
       text-align: center;
     }
 
-    div {
+    fieldset {
+      border: none;
+      padding: 0px;
       margin: 20px 0px;
     }
 
@@ -131,29 +133,29 @@
   </h3>
 
   <form>
-    <div>
-      <label for="nome">Nome:</label>
+    <fieldset>
+      <legend>Nome:</legend>
       <input type="text" name="nome">
-    </div>
+    </fieldset>
 
-    <div>
-      <label for="atividadeFisica">Atividade Física Favorita:</label>
+    <fieldset>
+      <legend>Atividade Física Favorita:</legend>
       <input type="radio" name="atividadeFisica">
-      <label for="">Caminhada</label>
+      <label">Caminhada</label>
       <input type="radio" name="atividadeFisica">
-      <label for="Corrida">Corrida</label>
+      <label>Corrida</label>
       <input type="radio" name="atividadeFisica">
-      <label for="Natação">Natação</label>
+      <label>Natação</label>
       <input type="radio" name="atividadeFisica">
-      <label for="Dança">Dança</label>
-    </div>
+      <label>Dança</label>
+    </fieldset>
 
-    <div>
-      <label for="comentario" style="display:block;">
+    <fieldset>
+      <legend>
         Deixe um breve comentário sobre a sua experiência com a atividade escolhida:
-      </label>
-      <textarea name="comentario"></textarea>
-    </div>
+      </legend>
+      <textarea></textarea>
+    </fieldset>
 
     <input type="button" value="Enviar Feedback">
 
