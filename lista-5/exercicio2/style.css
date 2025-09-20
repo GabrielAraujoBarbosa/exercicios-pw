@@ -1,0 +1,11 @@
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: rgb(195, 0, 255);
+}
+
+a:visited {
+    color: chartreuse;
+}

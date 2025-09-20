@@ -1,0 +1,31 @@
+div {
+    margin: 20px 0;
+}
+
+.boas-vindas {
+    color: green;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: start;
+
+}
+.apresentacao {
+    color: rgb(0, 134, 116);
+    text-align: center;
+    font-family: monospace;
+    text-decoration: underline;
+}
+
+#agradecimento {
+    color: chocolate;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: overline;
+}
+
+#despedida {
+    color: darkblue;
+    text-align: end;
+    font-family: serif;
+    font-style: italic;
+}
