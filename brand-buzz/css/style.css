@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+/* PADRONIZAÇÃO */
+:root {
+    --primary-color: #e85f19;
+    --secondary-color: #ee8a56;
+    --dark-color: #262627;
+    --info-color: #5d5d5d;
+    --light-color: #f8f9fc;
+}
+button {
+    all: unset;
+    display: block;
+    color: var(--light-color);
+    text-align: center;
+}
+button:hover {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: var(--dark-color);
+
+}
+
+
+/* ESTILOS */
+
+header {
+    margin: 0 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    margin: 5% 8%;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+
+header nav {
+    flex-grow: 1;
+    width: 60%;
+    padding-right: 14%;
+}
+
+header button {
+    background-color: var(--secondary-color);
+    width: 107px;
+    height: 35px;
+    border-radius: 4px;
+    box-shadow: -1px 1px 4px var(--secondary-color) ;
+}
+
+main #left-content {
+    margin-top: 9%;
+}
+
+main button {
+    background-color: var(--primary-color);
+    width: 160px;
+    height: 45px;
+    border-radius: 6px;
+    box-shadow: 2px 5px 5px var(--secondary-color);
+}
+
+main span {
+    color: var(--primary-color);
+}
+
+main i {
+    display: inline-block;
+    border-radius: 100%;
+    box-shadow: 0 0 0 var(--primary-color);
+}
