@@ -1,1 +1,21 @@
-/* fazer */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.caixa {
+    margin: 10% 5px;
+    padding: 0.5%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+p {
+    margin: 1%;
+    padding: 0.5%;
+    background-color: aqua;
+    border: 5px double red;
+}
+
+
