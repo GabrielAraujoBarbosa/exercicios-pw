@@ -1,0 +1,71 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  all: unset;
+}
+
+
+/* ESTILIZAÇÃO */
+
+header {
+  display: flex;
+  background-color: blue;
+  padding: 2% 2%;
+  background-image: linear-gradient(#3B3B3B, #1F1F1F, #000000);
+  color: white;
+}
+
+
+header ul {
+  display: flex;
+}
+
+/* MAIN  */
+main section:nth-child(odd) {
+  background-color: #ffffff;
+  color: black;
+}
+main section:nth-child(even) {
+  background-color: #1b1818;
+  color: white;
+}
+
+
+#sobre {
+  display: flex;
+}
+
+#sobre #minha-foto {
+  width: 47vw;
+}
+
+#sobre p #code-icon {
+  width: 3vw;
+}
+
+#sobre #container-apresentacao ul {
+  display: flex;
+}
+
+#sobre #container-apresentacao .imagens-link{
+  width: 5vw;
+}
+
+#tecnologias ul {
+  display: flex;
+}
+
+#tecnologias img {
+  width: 10vw;
+}

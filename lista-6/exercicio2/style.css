@@ -1,0 +1,16 @@
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+ul, li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+input {
+  all: unset;
+}
