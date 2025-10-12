@@ -82,7 +82,8 @@ section#sobre #container-apresentacao h2 {
   font-size: 4.2rem;
 }
 section#sobre #container-apresentacao p #code-icon {
-  width: 1.6rem;
+  width: 1.4rem;
+  vertical-align: bottom;
 }
 section#sobre #container-apresentacao ul {
   display: flex;
