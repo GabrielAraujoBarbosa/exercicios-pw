@@ -1,15 +1,23 @@
+/* JetBrains Mono FONT */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/* Montserrat FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* RESETS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Tahoma, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 ul, li {
   list-style: none;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 input {
   all: unset;
@@ -20,14 +28,27 @@ input {
 
 header {
   display: flex;
-  background-color: blue;
+  justify-content: space-around;
   padding: 2% 2%;
-  background-image: linear-gradient(#3B3B3B, #1F1F1F, #000000);
+  background-image: linear-gradient(#222222, #1d1d1d,#111111, #000000);
   color: white;
 }
+
+header h1 {
+  font: italic bolder 2rem "JetBrains Mono", monospace;
+  letter-spacing: -2px;
+}
+
 header ul {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15%;
+  font-size: 1.3rem;
+  color: #ffffff;
+  width: 50rem;
 }
+
 
 /* MAIN  SECTIONS */
 main section:nth-child(odd) {
@@ -41,65 +62,87 @@ main section:nth-child(even) {
 main section {
   padding: 5% 0;
 }
+main section h2{
+  font-style: italic;
+  font-weight: bolder;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2.8rem;
+}
 
-/* SECTIONS */
+/* SECTION #SOBRE */
 section#sobre {
   display: flex;
   padding: 0;
 }
-
 section#sobre #minha-foto {
-  width: 47vw;
+  width: 55rem;
+  min-width: 25rem;
 }
-
-section#sobre p #code-icon {
-  width: 3vw;
+section#sobre #container-apresentacao h2 {
+  font-size: 4.2rem;
 }
-
+section#sobre #container-apresentacao p #code-icon {
+  width: 1.6rem;
+}
 section#sobre #container-apresentacao ul {
   display: flex;
 }
-
 section#sobre #container-apresentacao .imagens-link{
-  width: 5vw;
+  width: 4.5rem;
 }
 
+/* SECTION #TECNOLOGIAS */
 section#tecnologias {
   text-align: center;
 }
 
+section#tecnologias h2{
+  font-size: 2.8rem;
+  letter-spacing: -2px;
+}
+
 section#tecnologias ul {
   display: flex;
+  justify-content: center;
 }
 
 section#tecnologias ul li {
-  background-color:#ffffff09;
-  border-radius: 1%;
+  border-radius: 40%;
 }
 section#tecnologias ul li:hover{
-  box-shadow: 1px 1px 1px #ffffff;
+  background-color:#ffffff09;
+  box-shadow: 0 0 10px #ffffff49;
 }
-
-
 section#tecnologias img {
-  width: 10vw;
+  width: 7.6rem;
 }
 
-
+/* SECTION #PROJETOS */
+section#projetos {
+  text-align: center;
+}
+section#projetos h2 {
+  letter-spacing: -2px;
+}
 section#projetos article{
   display: inline-block;
-  width: 25%;
+  width: 22rem;
   vertical-align: top;
+  background-color: #00000009;
+  border-radius: 10%;
 } 
-
 section#projetos article img {
-  max-width: 120%;
+  max-width: 20rem;
+  border-radius: 5%;
 }
 
+/* SECTION #CONTATO */
 section#contato {
   text-align: center;
 }
-
+section#contato h2 {
+  letter-spacing: -2px;
+}
 
 /* FOOTER */
 footer {
