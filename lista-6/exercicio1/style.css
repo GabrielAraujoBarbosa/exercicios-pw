@@ -25,13 +25,11 @@ header {
   background-image: linear-gradient(#3B3B3B, #1F1F1F, #000000);
   color: white;
 }
-
-
 header ul {
   display: flex;
 }
 
-/* MAIN  */
+/* MAIN  SECTIONS */
 main section:nth-child(odd) {
   background-color: #ffffff;
   color: black;
@@ -40,32 +38,70 @@ main section:nth-child(even) {
   background-color: #1b1818;
   color: white;
 }
-
-
-#sobre {
-  display: flex;
+main section {
+  padding: 5% 0;
 }
 
-#sobre #minha-foto {
+/* SECTIONS */
+section#sobre {
+  display: flex;
+  padding: 0;
+}
+
+section#sobre #minha-foto {
   width: 47vw;
 }
 
-#sobre p #code-icon {
+section#sobre p #code-icon {
   width: 3vw;
 }
 
-#sobre #container-apresentacao ul {
+section#sobre #container-apresentacao ul {
   display: flex;
 }
 
-#sobre #container-apresentacao .imagens-link{
+section#sobre #container-apresentacao .imagens-link{
   width: 5vw;
 }
 
-#tecnologias ul {
+section#tecnologias {
+  text-align: center;
+}
+
+section#tecnologias ul {
   display: flex;
 }
 
-#tecnologias img {
+section#tecnologias ul li {
+  background-color:#ffffff09;
+  border-radius: 1%;
+}
+section#tecnologias ul li:hover{
+  box-shadow: 1px 1px 1px #ffffff;
+}
+
+
+section#tecnologias img {
   width: 10vw;
+}
+
+
+section#projetos article{
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+} 
+
+section#projetos article img {
+  max-width: 120%;
+}
+
+section#contato {
+  text-align: center;
+}
+
+
+/* FOOTER */
+footer {
+  text-align: center;
 }
