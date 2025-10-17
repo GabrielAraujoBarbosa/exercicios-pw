@@ -90,7 +90,7 @@ section#sobre #container-apresentacao {
 }
 
 section#sobre #container-apresentacao h2 {
-  font-size: 4.5rem;
+  font-size: 4.6rem;
   margin-bottom: 5.2%;
 }
 
@@ -103,7 +103,7 @@ section#sobre #container-apresentacao p {
 
 section#sobre #container-apresentacao p #code-icon {
   width: 1.4rem;
-  margin-left: 0.9%;
+  margin-left: 1%;
   vertical-align: bottom;
 }
 section#sobre #container-apresentacao ul {
@@ -122,18 +122,19 @@ section#sobre #container-apresentacao .imagens-link{
 section#tecnologias {
   text-align: center;
 }
-
 section#tecnologias h2{
   font-size: 2.8rem;
   letter-spacing: -2px;
+  margin-bottom: 1%;
 }
 
 section#tecnologias ul {
   display: flex;
   justify-content: center;
+  margin: 3.7% 8rem;
 }
-
 section#tecnologias ul li {
+  margin: 0 0.6%;
   border-radius: 40%;
 }
 section#tecnologias ul li:hover{
@@ -180,6 +181,10 @@ section#projetos article a {
   background-color: rgba(0, 0, 0, 0.459);
   box-shadow: 0 0 2.5px #000000;
 }
+section#projetos article a:hover {
+  background-color: rgba(0, 0, 0, 0.570);
+}
+
 
 /* SECTION #CONTATO */
 section#contato {
@@ -188,8 +193,29 @@ section#contato {
 section#contato h2 {
   letter-spacing: -2px;
 }
+section#contato form {
+  margin: 4% 7.5%;
+}
+section#contato form label, section#contato form input {
+  display: block;
+  margin: 1% auto;
+}
+section#contato form input, section#contato form textarea {
+  background-color: #ffffff;
+  color: #000000;
+  width: 30%;
+  border: 1px solid #00000063;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+section#contato form input[type="submit"] {
+  cursor: pointer;
+
+  margin-top: 3.3%;
+}
 
 /* FOOTER */
 footer {
   text-align: center;
+  height: 3rem;
 }
