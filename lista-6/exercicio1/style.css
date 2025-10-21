@@ -213,6 +213,9 @@ section#contato form input[type="submit"] {
 
   margin-top: 3.3%;
 }
+section#contato form textarea {
+	resize: none;
+}
 
 /* FOOTER */
 footer {
