@@ -215,6 +215,8 @@ section#contato form input[type="submit"] {
 }
 section#contato form textarea {
 	resize: none;
+	outline: none;
+	border: none;
 }
 
 /* FOOTER */
