@@ -22,8 +22,12 @@ a {
 input {
   all: unset;
 }
-
-
+textarea {
+  resize: none;
+	outline: none;
+	border: none;
+}
+  
 /* ESTILIZAÇÃO */
 
 header {
@@ -39,7 +43,6 @@ header h1 {
   font: italic bolder 2rem "JetBrains Mono", monospace;
   letter-spacing: -2px;
 }
-
 header ul {
   display: flex;
   justify-content: space-around;
@@ -51,6 +54,8 @@ header ul {
 }
 header ul li:hover {
   text-shadow: 0 0 6px #ffffff91;
+
+  transition: all 0.1s ease;
 }
 
 /* MAIN  SECTIONS */
@@ -77,12 +82,17 @@ section#sobre {
   display: flex;
   padding: 0;
 }
+
 section#sobre #minha-foto {
   width: 99rem;
   min-width: 25rem;
 
+  transition: all 0.55s ease-out;
 }
-
+section#sobre #minha-foto:hover {
+  transform: scale(1.01);
+  filter: contrast(3%);
+}
 section#sobre #container-apresentacao {
   display: inline-block;
   text-align: center;
@@ -90,19 +100,21 @@ section#sobre #container-apresentacao {
   margin-right: 9%;
   padding: 6.5% 0;
 }
-
 section#sobre #container-apresentacao h2 {
   font-size: 4.6rem;
   margin-bottom: 5.2%;
-}
 
+  transition: all 3s ease-out;
+}
+section#sobre #container-apresentacao h2:hover {
+  filter: blur(30px);
+}
 section#sobre #container-apresentacao p {
   font-size: 1.1rem;
   text-align: justify;
   margin: 0 1% 7.3% 1%;
 
 }
-
 section#sobre #container-apresentacao p #code-icon {
   width: 1.4rem;
   margin-left: 1%;
@@ -116,20 +128,25 @@ section#sobre #container-apresentacao ul {
 section#sobre #container-apresentacao ul li {
   margin-left: 3%;
 }
-section#sobre #container-apresentacao .imagens-link{
+section#sobre #container-apresentacao ul li .imagens-link{
   width: 3.5rem;
+
+  transition: all 0.3s ease;
+}
+section#sobre #container-apresentacao ul li .imagens-link:hover {
+  transform: scale(1.05);
 }
 
 /* SECTION #TECNOLOGIAS */
 section#tecnologias {
   text-align: center;
 }
+
 section#tecnologias h2{
   font-size: 2.8rem;
   letter-spacing: -2px;
   margin-bottom: 1%;
 }
-
 section#tecnologias ul {
   display: flex;
   justify-content: center;
@@ -138,6 +155,8 @@ section#tecnologias ul {
 section#tecnologias ul li {
   margin: 0 0.6%;
   border-radius: 40%;
+
+  transition: all 0.5s ease;
 }
 section#tecnologias ul li:hover{
   background-color:#ffffff09;
@@ -151,6 +170,7 @@ section#tecnologias img {
 section#projetos {
   text-align: center;
 }
+
 section#projetos h2 {
   letter-spacing: -2px;
 }
@@ -163,7 +183,12 @@ section#projetos article{
 
   margin: 3% 1%;
   padding: 2% 2%;
-} 
+
+  transition: all 0.5s ease;
+}
+section#projetos article:hover{ 
+  transform: scale(1.06);
+}
 section#projetos article h3 {
   font-weight: 600;
   font-size: 1.3rem;
@@ -174,7 +199,6 @@ section#projetos article img {
   border-radius: 5%;
   margin: 4% auto;
 }
-
 section#projetos article a {
   display: block;
   margin-top: 2rem;
@@ -182,16 +206,19 @@ section#projetos article a {
   color: white;
   background-color: rgba(0, 0, 0, 0.459);
   box-shadow: 0 0 2.5px #000000;
+
+  transition: all 0.15s ease;
 }
 section#projetos article a:hover {
   background-color: rgba(0, 0, 0, 0.570);
 }
 
-
 /* SECTION #CONTATO */
 section#contato {
   text-align: center;
+  border-radius: 0 0 0.7% 0.7%;
 }
+
 section#contato h2 {
   letter-spacing: -2px;
 }
@@ -212,14 +239,37 @@ section#contato form input, section#contato form textarea {
 }
 section#contato form input[type="submit"] {
   cursor: pointer;
-
+  font-weight: 600;
+  background-color: #ffffffef;
   margin-top: 3.3%;
+
+  transition: all 0.2s ease-out;
 }
+section#contato form input[type="submit"]:hover {
+  color: #ffffff;
+  background-color: rgb(75, 75, 75);
+}
+
 
 /* FOOTER */
 footer {
-  height: 3rem;
+  padding: 0.6rem;
+
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  padding-bottom: 0.8rem;
+}
+
+footer #horizontal-row {
+  background-color: rgba(0, 0, 0, 0.11);
+  width: 74%;
+  height: 0.4rem;
+  border-radius: 1rem;
+  margin-bottom: 0.9rem;
+
+  transition: all 2s ease;
+}
+footer #horizontal-row:hover {
+  width: 85%;
 }
