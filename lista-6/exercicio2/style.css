@@ -3,14 +3,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Tahoma, sans-serif;
 }
 ul, li {
   list-style: none;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
-input {
-  all: unset;
+
+
+figure {
+  padding: 0; 
+  margin: 0; 
+  border-radius: 2rem;
+}
+
+figure:hover{ 
+  transform: scale(1.06);
+  background-color: new;
+  box-shadow: 0 0 10px black;
+}
+
+img:hover {
+  border: 0;
+}
+
+.column {
+  width: 20%;
+  margin: 0;
 }
