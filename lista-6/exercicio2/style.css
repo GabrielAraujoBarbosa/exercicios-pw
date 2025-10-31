@@ -32,54 +32,50 @@ header ul {
   display: flex;
 }
 
-section#galeria {
-  background-color: rgb(20, 20, 56);
-  display: inline-block;
-  width: 85%;
+/* SECTION GALERIA */
+main section#galeria, main aside {
+  height: 960px;
 }
 
-section#galeria div {
+section#galeria {
+  background-color: rgb(20, 20, 56);
+  width: 89%;
+}
+
+
+section#galeria div.column {
   width: 30%;
   display: inline-block;
 }
 
-section#galeria div figure {
+section#galeria div.column figure {
   padding: 0; 
   margin: 0; 
   border-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.045);
 }
 
-figure:hover{ 
+section#galeria div.column figure:hover{ 
   transform: scale(1.06);
   background-color: new;
   box-shadow: 0 0 10px black;
 }
 
-section#galeria div figure img {
+section#galeria div.column figure img {
   width: 30%;
 }
 
-
-img:hover {
-  border: 0;
+section#galeria div.column figure img:hover {
+  border: 2px solid black;
   /* figcaption fique aparecendo sobre a imagem */
   /* usar positioning (aula de relative/ absolute) */
 }
 
-.column {
-  width: 23%;
-  margin: 0;
-}
-
+/* ASIDE */
 aside {
   background-color: rgb(39, 0, 78);
-  width: 14%;
+  width: 11%;
   float: right;
-}
-
-aside div#profile img#foto-perfil {
-  border-radius: 100%;
 }
 
 
@@ -87,6 +83,7 @@ aside div#profile img#foto-perfil {
   width: 6% 
 */
 
+/* FOOTER */
 footer ul {
   display: flex;
 }
