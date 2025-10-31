@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* RESETS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 ul, li {
   list-style: none;
@@ -23,15 +26,28 @@ body {
 /* HEADER */
 header {
   display: flex;
+  align-items: center;
 }
 header ul {
   display: flex;
 }
 
-figure {
+section#galeria {
+  background-color: rgb(20, 20, 56);
+  display: inline-block;
+  width: 85%;
+}
+
+section#galeria div {
+  width: 30%;
+  display: inline-block;
+}
+
+section#galeria div figure {
   padding: 0; 
   margin: 0; 
   border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.045);
 }
 
 figure:hover{ 
@@ -39,6 +55,11 @@ figure:hover{
   background-color: new;
   box-shadow: 0 0 10px black;
 }
+
+section#galeria div figure img {
+  width: 30%;
+}
+
 
 img:hover {
   border: 0;
@@ -52,18 +73,19 @@ img:hover {
 }
 
 aside {
-  width: 25%;
+  background-color: rgb(39, 0, 78);
+  width: 14%;
+  float: right;
 }
+
+aside div#profile img#foto-perfil {
+  border-radius: 100%;
+}
+
 
 /* margens horizontais entre columns e aside 
   width: 6% 
 */
-
-
-aside {
-  background-color: rgb(54, 0, 104);
-}
-
 
 footer ul {
   display: flex;
