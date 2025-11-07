@@ -27,38 +27,48 @@ body {
 header {
   display: flex;
   align-items: center;
+  padding: 0.8rem 1.49rem;
 }
 header ul {
   display: flex;
 }
 
-/* SECTION GALERIA */
-main section#galeria, main aside {
-  height: 960px;
+/* MAIN */
+main {
+  box-shadow: 0 2px 8px #000000;
+}
+/* ALTURA PADRÃO PARA: SECTION E ASIDE (DENTRO DE MAIN) */
+main section, main aside {
+  height: 940px;
 }
 
+/* SECTION GALERIA */
 section#galeria {
   background-color: rgb(20, 20, 56);
-  width: 89%;
+  width: 83%;
+  padding-left: 1.49rem;
 }
-
 
 section#galeria div.column {
-  width: 30%;
+  width: 28.5%;
   display: inline-block;
+  margin-right: 1.64rem;
 }
-
 section#galeria div.column figure {
-  padding: 0; 
-  margin: 0; 
   border-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.045);
+  text-align: center;
+  
+  padding: 0.35rem 1.19rem;
 }
+section#galeria div.column figure figcaption {
+  text-align: start;
+}
+
 
 section#galeria div.column figure:hover{ 
   transform: scale(1.06);
-  background-color: new;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px 0.5px black;
 }
 
 section#galeria div.column figure img {
@@ -74,16 +84,43 @@ section#galeria div.column figure img:hover {
 /* ASIDE */
 aside {
   background-color: rgb(39, 0, 78);
-  width: 11%;
+  width: 17%;
   float: right;
+  padding-left: 1.01rem;
+  border-left: 2px inset rgb(65, 0, 131);
 }
 
+aside div#profile img{
+  text-align: center;
+}
 
-/* margens horizontais entre columns e aside 
-  width: 6% 
-*/
+aside div#profile img {
+  
+  width: 7rem;
+  border-radius: 100%;
+}
 
 /* FOOTER */
+footer {
+  padding-top: 1.3rem;
+  padding-bottom: 0.6rem;
+  color: #dfdfdf;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.36rem;
+}
+
 footer ul {
   display: flex;
+  gap: 1rem;
+}
+
+footer ul li a img {
+  width: 2.3rem;
+}
+footer ul li a p {
+  font-size: 0.79rem;
 }
