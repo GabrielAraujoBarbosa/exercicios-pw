@@ -25,12 +25,19 @@ body {
 
 /* HEADER */
 header {
+  padding: 0.8rem 1.49rem;
+  padding-right: 7.75rem;
   display: flex;
   align-items: center;
-  padding: 0.8rem 1.49rem;
 }
-header ul {
+
+header nav {
+  flex-grow: 1;
+  margin-left: 2.5rem;
+}
+header nav ul {
   display: flex;
+  justify-content: space-evenly;
 }
 
 /* MAIN */
@@ -61,41 +68,34 @@ section#galeria div.column figure {
   
   padding: 0.35rem 1.19rem;
 }
-section#galeria div.column figure figcaption {
-  text-align: start;
-}
-
-
 section#galeria div.column figure:hover{ 
   transform: scale(1.06);
   box-shadow: 0 0 10px 0.5px black;
 }
-
 section#galeria div.column figure img {
   width: 30%;
 }
-
 section#galeria div.column figure img:hover {
   border: 2px solid black;
   /* figcaption fique aparecendo sobre a imagem */
   /* usar positioning (aula de relative/ absolute) */
 }
 
+section#galeria div.column figure figcaption {
+  text-align: start;
+}
+
 /* ASIDE */
 aside {
-  background-color: rgb(39, 0, 78);
+  background-color: rgb(37, 0, 71);
   width: 17%;
   float: right;
   padding-left: 1.01rem;
-  border-left: 2px inset rgb(65, 0, 131);
-}
-
-aside div#profile img{
-  text-align: center;
+  border-left: 2px inset rgb(68, 0, 131);
 }
 
 aside div#profile img {
-  
+  text-align: center;
   width: 7rem;
   border-radius: 100%;
 }
