@@ -30,7 +30,9 @@ header {
   display: flex;
   align-items: center;
 }
-
+header h1 {
+  text-shadow: 4px 4px #000000, 0 0 9px rgba(255, 255, 255, 0.13);  
+}
 header nav {
   flex-grow: 1;
   margin-left: 2.5rem;
@@ -46,59 +48,87 @@ main {
 }
 /* ALTURA PADRÃO PARA: SECTION E ASIDE (DENTRO DE MAIN) */
 main section, main aside {
-  height: 940px;
-}
-
-/* SECTION GALERIA */
-section#galeria {
-  background-color: rgb(20, 20, 56);
-  width: 83%;
-  padding-left: 1.49rem;
-}
-
-section#galeria div.column {
-  width: 28.5%;
-  display: inline-block;
-  margin-right: 1.64rem;
-}
-section#galeria div.column figure {
-  border-radius: 2rem;
-  background-color: rgba(255, 255, 255, 0.045);
-  text-align: center;
-  
-  padding: 0.35rem 1.19rem;
-}
-section#galeria div.column figure:hover{ 
-  transform: scale(1.06);
-  box-shadow: 0 0 10px 0.5px black;
-}
-section#galeria div.column figure img {
-  width: 30%;
-}
-section#galeria div.column figure img:hover {
-  border: 2px solid black;
-  /* figcaption fique aparecendo sobre a imagem */
-  /* usar positioning (aula de relative/ absolute) */
-}
-
-section#galeria div.column figure figcaption {
-  text-align: start;
+  height: 760px;
 }
 
 /* ASIDE */
-aside {
+main aside {
   background-color: rgb(37, 0, 71);
   width: 17%;
   float: right;
   padding-left: 1.01rem;
   border-left: 2px inset rgb(68, 0, 131);
 }
-
-aside div#profile img {
+main aside div#profile {
+  margin-top: 1.6rem;
+  margin-bottom: 2.37rem;
   text-align: center;
-  width: 7rem;
-  border-radius: 100%;
+  font-size: 0.81rem;
 }
+main aside div#profile img {
+  text-align: center;
+  width: 5.3rem;
+  border-radius: 100%;
+  margin-bottom: 9px;
+}
+
+
+main aside ul li {
+  margin-bottom: 2rem;
+}
+main aside ul li a {
+  display: block;
+  padding: 0.7rem;
+  width: 87%;
+  border-radius: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.089);
+}
+main aside ul li a > :is(img, span) {
+  vertical-align: middle;
+}
+main aside ul li a span {
+  margin-left: 0.6rem;
+}
+
+/* SECTION GALERIA */
+main section#galeria {
+  background-color: rgb(20, 20, 56);
+  width: 83%;
+  padding: 1.61rem 0 0 1.49rem;
+}
+
+main section#galeria div.column {
+  width: 28.5%;
+  display: inline-block;
+  margin-right: 2.35rem;
+  vertical-align: bottom;
+}
+main section#galeria div.column h2 {
+  margin-bottom: 1rem;
+}
+main section#galeria div.column figure {
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.045);
+  text-align: center;
+
+  padding: 0.35rem 1.19rem;
+  margin-bottom: 2.1rem;
+}
+main section#galeria div.column figure:hover{ 
+  transform: scale(1.06);
+  box-shadow: 0 0 10px 0.5px black;
+}
+main section#galeria div.column figure img {
+  width: 30%;
+}
+main section#galeria div.column figure img:hover {
+  border: 2px solid black;
+}
+
+main section#galeria div.column figure figcaption {
+  text-align: start;
+}
+
 
 /* FOOTER */
 footer {
