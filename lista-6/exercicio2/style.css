@@ -46,6 +46,7 @@ header nav ul {
 main {
   box-shadow: 0 2px 8px #000000;
 }
+
 /* ALTURA PADRÃO PARA: SECTION E ASIDE (DENTRO DE MAIN) */
 main section, main aside {
   height: 760px;
@@ -71,8 +72,6 @@ main aside div#profile img {
   border-radius: 100%;
   margin-bottom: 9px;
 }
-
-
 main aside ul li {
   margin-bottom: 2rem;
 }
@@ -96,7 +95,6 @@ main section#galeria {
   width: 83%;
   padding: 1.61rem 0 0 1.49rem;
 }
-
 main section#galeria div.column {
   width: 28.5%;
   display: inline-block;
@@ -129,7 +127,6 @@ main section#galeria div.column figure figcaption {
   text-align: start;
 }
 
-
 /* FOOTER */
 footer {
   padding-top: 1.3rem;
@@ -142,12 +139,10 @@ footer {
   align-items: center;
   gap: 1.36rem;
 }
-
 footer ul {
   display: flex;
   gap: 1rem;
 }
-
 footer ul li a img {
   width: 2.3rem;
 }
