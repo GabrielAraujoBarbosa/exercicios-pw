@@ -1,0 +1,57 @@
+/* PADRONIZAÇÃO */
+:root {
+    --body-color: #f5f5f4;
+    --header-color: #222222;
+    --buton-color: #017afd;
+    --card-color: #ffffff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+body {
+    background-color: var(--body-color);
+}
+
+
+/* ESTILIZAÇÃO */
+header {
+    background-color: var(--header-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 0.7%;
+}
+
+main#container {
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem 2%;
+}
+
+main#container div.card {
+    background-color: var(--card-color);
+    color: #000000;
+    box-shadow: 0 0 30px black;
+    border-radius: 20px;
+    
+    text-align: center;
+}
+
+main#container div.card button {
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: var(--buton-color);
+    padding: 1%;
+    margin: 4% auto;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
