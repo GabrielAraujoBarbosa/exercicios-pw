@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --header-color: #CC0000;
+    --text-header-color: #FFDE00; 
+    --text-header-border-color: #3B4CCA;
+    --card-color: #d4d4d4;
+    --footer-color: #B3A125;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Orbitron;
+
+}
+ul, ol {
+    list-style-type: none;
+}
+
+header#principal-header {
+    background-color: var(--header-color);
+    padding: 1rem;
+}
+
+header h1 {
+    color: var(--text-header-color);
+    text-align: center;
+    text-shadow: 2.1px -1px 1.4px var(--text-header-border-color);
+}
+
+section#characters-gallery {
+    padding: 3rem 1.1rem;
+}
+
+section#characters-gallery ul#cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem 1rem;
+}
+
+ul#cards-list li {
+    flex-basis: 1rem;
+    
+}
+
+.card-item {
+    background-color: var(--card-color);
+    border-radius: 0.7rem;
+    height: 100%;
+    padding: 0.7rem;
+
+}
+
+.card-item .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+    text-align: start;
+}
+
+footer {
+    background-color: var(--footer-color);
+    padding : 1rem 0 1.2rem 1rem;
+    color: #ffff;
+}
