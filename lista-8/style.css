@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* PADRONIZAÇÃO DE CORES */
+:root{
+    --default-color: #ffffff;
+    --h1-header-color: #f68c28;
+    --main-section-colors: #dddddd;
+    --aside-color: #162b4c;
+    --footer-color: #0c1e22;
+}
+
+/* RESET DE ESTILOS */
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Nunito;
+}
+ul {
+  list-style: none;
+}
+a, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit; 
+    outline: none; 
+}
+
+body {
+    background-color: var(--default-color);
+}
+
+/* ESTILIZAÇÃO */
+header {
+    padding: 0.72rem 0 0.79rem 1rem;
+    font-size: 0.66rem;
+    color: var(--h1-header-color);
+
+    -webkit-text-stroke-width: 0.13px; 
+    -webkit-text-stroke-color: #742ade;
+}
+
+div#flex-container{
+    display: flex;
+
+}
+
+div#flex-container aside {
+    background-color: var(--aside-color);
+    color: var(--default-color);
+
+    flex: 0 0 200px;
+    padding: 1.3rem 0 0 1rem;
+}
+aside nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+}
+
+
+div#flex-container main {
+    background-color: var(--main-section-colors);
+
+    flex-grow: 1;
+    padding: 1.3rem 0 1.9rem 1.3rem;
+}
+
+main section#dashboard-cards {
+    background-color: var(--main-section-colors);
+}
+main section#dashboard-cards article.cards {
+    background-color: var(--default-color);
+}
+section#dashboard-cards article.cards div.value{
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: var(--default-color);
+    padding: 1.2rem 0 1.3rem 1.2rem;
+}
