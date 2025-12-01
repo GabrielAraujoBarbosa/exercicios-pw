@@ -1,0 +1,65 @@
+/* IMPORTAÇÃO DE FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* PADRONIZAÇÃO DE CORES */
+:root{
+    --text-color1: #464646;
+    --text-color2: #ffffff;
+    --header-color: #ff3d00;
+    --card-color: #ffffff;
+    --link-card-color: #fe3233;
+    --buton-color: #018ebd;
+}
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+}
+body {
+    color: var(--text-color1);
+    background-image: url(../assets/background.png);
+}
+
+/* HEADER PADRÃO */
+header {
+    background-color: var(--header-color);
+    color: var(--text-color2);
+    display: flex;
+}
+header nav ul {
+    display: flex;
+}
+
+/* ENTRADAS PADRÃO */
+input, select, textarea {
+    background-color: var(--card-color);
+    color: var(--text-color1);
+    box-shadow: 0.02px 0.02px 0.17rem var(--text-color1);
+}
+input[type="radio"], input[type="checkbox"] {
+    box-shadow: none;
+}
+input:focus, select:focus, textarea:focus {
+    outline: 0.25px solid var(--buton-color);
+}
+
+/* TEXTAREA PADRÃO */
+textarea {
+    resize: none;
+    /* definir tamanho */
+}
+
+/* BUTTON PADRÃO */
+button {
+    cursor: pointer;
+    background-color: #018ebd;
+    color: var(--text-color2);
+}

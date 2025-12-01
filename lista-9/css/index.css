@@ -1,0 +1,20 @@
+/* PADRONIZAÇÃO CARDS DA PÁGINA */
+.card {
+    background-color: var(--card-color); 
+}
+/* PADRONIZAÇÃO TITULOS ASIDE */
+aside section h3 {
+    background-color: var(--card-color);
+
+}
+
+/* MAIN SECION */
+article.card-produto a {
+    background-color: var(--link-card-color); 
+    color: var(--text-color2);
+}
+
+/* ASIDE SECTION */
+
+
+
