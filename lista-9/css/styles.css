@@ -43,6 +43,7 @@ input, select, textarea {
     background-color: var(--card-color);
     color: var(--text-color1);
     box-shadow: 0.02px 0.02px 0.17rem var(--text-color1);
+    /*padding*/
 }
 input[type="radio"], input[type="checkbox"] {
     box-shadow: none;
@@ -54,7 +55,6 @@ input:focus, select:focus, textarea:focus {
 /* TEXTAREA PADRÃO */
 textarea {
     resize: none;
-    /* definir tamanho */
 }
 
 /* BUTTON PADRÃO */
@@ -62,4 +62,5 @@ button {
     cursor: pointer;
     background-color: #018ebd;
     color: var(--text-color2);
+    /*padding*/
 }

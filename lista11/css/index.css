@@ -1,0 +1,14 @@
+h1, h2 {
+    color: var(--DEFAULT-title-color);
+    text-shadow: 1.2px 1.2px 2.5px var(--DEFAULT-shadow-title-color);
+}
+
+#highlight-title {
+    color: var(--DARK-button-color);
+    text-shadow: 0 0 14px #911044;
+}
+
+#highlight-description {
+    font-style: italic;
+    color: var(--DARK-button-color);
+}
