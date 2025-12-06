@@ -1,6 +1,6 @@
 h1, h2 {
     color: var(--DEFAULT-title-color);
-    text-shadow: 1.2px 1.2px 2.5px var(--DEFAULT-shadow-title-color);
+    text-shadow: 1.2px 1.2px 2.75px var(--DEFAULT-shadow-title-color);
 }
 
 #highlight-title {

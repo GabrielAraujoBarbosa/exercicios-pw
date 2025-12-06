@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/index.css">
 
-  <title>ETEC Irmã Agostina - DS</title>
+  <title>ETEC Irmã Agostina - Desenvolvimento de Sistemas</title>
 </head>
 <body>
   <header>
     <h1>
       <a href="./index.html">
-        <img src="./assets/header/DARK-etecia-logo.png" alt="ETEC Irmã Agostina">
+        <img src="./assets/DARK-etecia-logo.png" alt="ETEC Irmã Agostina">
       </a>
     </h1>
     
@@ -28,24 +28,24 @@
         </li>
         
         <li>
-          <a href="./pages/inscricao.html">Inscreva-se</a>
-        </li>
-        
-        <li>
           <a href="./pages/unidade.html">Unidade</a>
         </li>
         
         <li>
           <a href="./pages/contato.html">Contato</a>
         </li>
+
+        <li>
+          <a href="./pages/inscricao.html">Inscreva-se</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero-section">
       <div class="hero-container">
-        <img src="./assets/index/etecia-ds-logo.png" alt="Etecia Desenvolvimento de Sistemas Logo">
+        <img src="./assets/etecia-ds-logo.png" alt="Etecia Desenvolvimento de Sistemas Logo">
 
         <h1>O Seu futuro em tecnologia começa aqui!</h1>
         <!-- Colocar o video do instagram aqui -->
@@ -143,25 +143,91 @@
       <a href="./pages/curso.html">Conhecer o Curso</a>
     </section>
     
-    <section>
-      Por que escolher a Etecia?
+    <section class="motivations-section">
+      <h2>Por que escolher a Etecia?</h2>
+ 
+      <article class="motivation-row">
+        <div class="motivation-content-row">
+          <h3>
+            Prática com desafios de código
+          </h3>
 
-      Prática com desafios de código
-        Aprimoração das habilidades de pensamento computacional e obtenção de experiência prática de codificação.
+          <p>
+            Aprimoração das habilidades de pensamento computacional e obtenção de experiência prática de codificação.
+          </p>
+        </div>
 
-      Construção de portfólio com projetos
-        Desenvolva projetos e crie soluções inovadoras em equipe. Use todos os conhecimentos obtidos, criando um diferencial em sua formação e te preparando para as oportunidades do mercado.
+        <figure class="motivation-media-row">
+          <img src="" alt="">
+        </figure>
+      </article>
 
-      Compartilhamento de conhecimento em comunidade
-        Aprenda e desenvolva de forma colaborativa, um aluno contribuindo com o outro. Faça networking, conquiste e vibre em equipe. 
+      <article class="motivation-row reverse">
+        <div class="motivation-content-row">
+          <h3>
+            Construção de portfólio com projetos
+          </h3>
 
+          <p>
+            Desenvolva projetos e crie soluções inovadoras em equipe. Use todos os conhecimentos obtidos, criando um diferencial em sua formação e te preparando para as oportunidades do mercado.
+          </p>
+        </div>
+
+        <figure class="motivation-media-row">
+          <img src="" alt="">
+        </figure>
+      </article>
+
+      <article class="motivation-row">
+        <div class="motivation-content-row">
+          <h3>
+            Compartilhamento de conhecimento em comunidade
+          </h3>
+          
+          <p>
+            Aprenda e desenvolva de forma colaborativa, um aluno contribuindo com o outro. Faça networking, conquiste e vibre em equipe.
+          </p> 
+        </div>
+
+        <figure class="motivation-media-row">
+          <img src="" alt="">
+        </figure>
+      </article>
     </section>
 
 
-    <section>
-      DEPOIMENTOS DE QUEM ESTÁ COM A GENTE
+    <section class="testimonials-section">
+      <h2>Depoimentos de quem está com a gente</h2>
 
-      <!-- Colocar depoimentos -->
+      <figure class="testimonial-card">
+        <blockquote class="quote-text">
+          "O DevClub mudou minha vida! Em menos de 6 meses consegui minha primeira vaga como desenvolvedora. A metodologia prática e o suporte dos mentores fazem toda a diferença."
+        </blockquote>
+
+        <figcaption class="author-info">
+          <img src="" alt="Foto de Ana Silva" class="author-avatar">
+              
+          <div class="author-details">
+            <cite class="author-name">Ana Silva</cite>
+            <span class="author-role">Desenvolvedora Full-Stack na Tech Corp</span>
+          </div>
+        </figcaption>
+      </figure>
+
+      <figure class="testimonial-card">
+        <blockquote class="quote-text">
+          "O DevClub mudou minha vida! Em menos de 6 meses consegui minha primeira vaga como desenvolvedora. A metodologia prática e o suporte dos mentores fazem toda a diferença."
+        </blockquote>
+
+        <figcaption class="author-info">
+          <img src="" alt="Foto de Ana Silva" class="author-avatar">
+              
+          <div class="author-details">
+            <cite class="author-name">Ana Silva</cite>
+            <span class="author-role">Desenvolvedora Full-Stack na Tech Corp</span>
+          </div>
+        </figcaption>
+      </figure>
     </section>
 
     <section class="cta-section">
@@ -199,15 +265,79 @@
           Oportunidades de Emprego
         </li>
       </ul>
-      
-      
-      
-      
     </section>
   </main>
 
   <footer>
-    
+    <div class="footer-brand">
+      <div class="brand-area">
+        <h2>
+          <img src="./assets/DARK-etecia-logo.png" alt="ETEC Irmã Agostina">
+          ETECIA
+        </h2>
+
+        <nav aria-label="Redes Sociais">       
+          <ul class="social-links">
+            <li>
+              <a href="https://www.instagram.com/etecia.ds/" class="social-link" aria-label="Instagram">
+                <!-- icone -->
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/etec-irma-agostina" class="social-link" aria-label="GitHub">
+                <!-- icone -->
+              </a>
+            </li>
+
+            <li>
+              <a href="https://x.com/etecetecia" class="social-link" aria-label="Twitter">
+                <!-- icone -->
+              </a>
+            </li>
+
+            <li>
+              <a href="https://etecia.com.br/" class="social-link" aria-label="Página Oficial">
+                <!-- icone -->
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav class="footer-nav" aria-label="Links do Rodapé">
+        <h3 class="nav-title-footer">Links Rápidos</h3>
+        
+        <ul>
+          <li>
+            <a href="./index.html">Início</a>
+          </li>
+
+          <li>
+            <a href="./pages/curso.html">Curso</a>
+          </li>
+          
+          <li>
+            <a href="./pages/unidade.html">Unidade</a>
+          </li>
+          
+          <li>
+            <a href="./pages/contato.html">Contato</a>
+          </li>
+
+          <li>
+            <a href="./pages/inscricao.html">Inscreva-se</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+    </div>
   </footer>
 
 </body>
