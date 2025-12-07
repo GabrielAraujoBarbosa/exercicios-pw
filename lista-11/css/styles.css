@@ -1,0 +1,36 @@
+/* IMPORTAÇÃO DE FONTE */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PADRONIZAÇÃO DE CORES */
+:root {
+    --DEFAULT-title-color: #73B0D9;
+    --DEFAULT-shadow-title-color: #644da5;
+
+    --DARK-background-color: #212121;
+    --DARK-card-color: #aaaaaa;
+    --DARK-text-color: #ffffff;
+    --DARK-button-color: #ff0067;
+
+    /*
+    --LIGHT-background-color: #ffffff;
+    --LIGHT-card-color: #aaaaaa; mudar
+    --LIGHT-text-color: #;
+    --LIGHT-button-color: #;
+    */
+}
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  
+  background-color: var(--DARK-background-color);
+  color: var(--DARK-text-color);
+}
