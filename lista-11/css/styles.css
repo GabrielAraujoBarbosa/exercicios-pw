@@ -31,6 +31,53 @@
   text-decoration: none;
   list-style: none;
   
-  background-color: var(--DARK-background-color);
   color: var(--DARK-text-color);
+}
+body {
+  background-color: var(--DARK-background-color);
+}
+h1, h2 {
+    color: var(--DEFAULT-title-color);
+    text-shadow: 1.2px 1.2px 2.75px var(--DEFAULT-shadow-title-color);
+}
+p {
+  font-weight: 500;
+}
+
+header {
+  background-color: blue;
+  margin: 1.09rem 2rem;
+  padding: 10px 55px;
+  border-radius: 30px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header img {
+  width: 50px;
+}
+header ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+header #subscribe-button {
+    background-color: var(--DARK-button-color);
+    color: var(--DARK-text-color);
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.link-action {
+    background-color: var(--DARK-button-color);
+    color: var(--DARK-text-color);
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+footer div.footer-brand{
+    display: flex;
 }

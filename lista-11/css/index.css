@@ -1,14 +1,39 @@
-h1, h2 {
-    color: var(--DEFAULT-title-color);
-    text-shadow: 1.2px 1.2px 2.75px var(--DEFAULT-shadow-title-color);
+/* PADRÕES DA PÁGINA*/
+section {
+    text-align: center;
 }
 
-#highlight-title {
+article.info-card{
+    background-color: var(--DARK-card-color);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1.5px 1.5px 5px var(--DEFAULT-shadow-title-color);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    display: grid;
+}
+
+div.infos-course-cards, div.subjects-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-section #highlight-title {
     color: var(--DARK-button-color);
     text-shadow: 0 0 14px #911044;
 }
-
-#highlight-description {
+.cta-section #highlight-description {
     font-style: italic;
     color: var(--DARK-button-color);
+}
+.cta-section .cta-benefits-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 13px 25px;
 }
