@@ -9,10 +9,10 @@
     --DEFAULT-shadow-title-color: #644da5;
 
     --DARK-background-color: #212121;
-    --DARK-card-color: #aaaaaa;
+    --DARK-card-color: #ffffff21;
     --DARK-text-color: #ffffff;
     --DARK-button-color: #ff0067;
-
+    --DARK-shadow-color: #911044;
     /*
     --LIGHT-background-color: #ffffff;
     --LIGHT-card-color: #aaaaaa; mudar
@@ -20,7 +20,6 @@
     --LIGHT-button-color: #;
     */
 }
-
 /* RESET CSS */
 * {
   margin: 0;
@@ -37,15 +36,15 @@ body {
   background-color: var(--DARK-background-color);
 }
 h1, h2 {
-    color: var(--DEFAULT-title-color);
-    text-shadow: 1.2px 1.2px 2.75px var(--DEFAULT-shadow-title-color);
+  color: var(--DEFAULT-title-color);
+  text-shadow: 1.2px 1.2px 2.75px var(--DEFAULT-shadow-title-color);
 }
 p {
   font-weight: 500;
 }
 
 header {
-  background-color: blue;
+  background-color: var(--DARK-background-color);
   margin: 1.09rem 2rem;
   padding: 10px 55px;
   border-radius: 30px;
@@ -59,25 +58,64 @@ header img {
   width: 50px;
 }
 header ul {
-    display: flex;
-    gap: 20px;
-    flex-wrap: nowrap;
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
-header #subscribe-button {
-    background-color: var(--DARK-button-color);
-    color: var(--DARK-text-color);
-    padding: 10px 20px;
-    border-radius: 6px;
+header .page-link:hover {
+  text-shadow: 0 0 5.3px #707070;
+}
+header #subscribe-link {
+  background-color: var(--DARK-button-color);
+  color: var(--DARK-text-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+header #subscribe-link:hover {
+  box-shadow: 0 0 10px var(--DARK-shadow-color);
 }
 
 .link-action {
-    background-color: var(--DARK-button-color);
-    color: var(--DARK-text-color);
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-weight: 600;
+  background-color: var(--DARK-button-color);
+  color: var(--DARK-text-color);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 0 15px var(--DARK-shadow-color);
+}
+.link-action:hover {
+  box-shadow: 0 0 25px var(--DARK-shadow-color);
 }
 
-footer div.footer-brand{
-    display: flex;
+.link-action-reverse{
+  border: 3px ridge var(--DARK-button-color);
+  color: var(--DARK-button-color);
+
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 0 15px var(--DARK-shadow-color);
+}
+.link-action-reverse:hover {
+  box-shadow: 0 0 20.5px var(--DARK-shadow-color);
+  text-shadow: 0 0 10px var(--DARK-button-color);
+}
+
+div.footer-brand{
+  display: flex;
+}
+
+.brand-area .social-links{
+  display: flex;
+  gap: 15px;
+}
+.social-links li {
+  width: 30px;
+}
+.social-links a svg g {
+  fill: #c2c2c2;
+}
+
+.contact-list a svg {
+  stroke: var(--DARK-button-color);
 }

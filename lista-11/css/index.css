@@ -3,11 +3,27 @@ section {
     text-align: center;
 }
 
+.hero-section h1 {
+    font-size: 3.5rem;
+}
+
+.hero-section .features-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.hero-section .material-symbols-rounded {
+    font-size: 5.5rem;
+}
+
+
 article.info-card{
     background-color: var(--DARK-card-color);
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 1.5px 1.5px 5px var(--DEFAULT-shadow-title-color);
 
     display: flex;
     flex-direction: column;
@@ -25,7 +41,7 @@ div.infos-course-cards, div.subjects-cards {
 
 .cta-section #highlight-title {
     color: var(--DARK-button-color);
-    text-shadow: 0 0 14px #911044;
+    text-shadow: 0 0 14px var(--DARK-shadow-color);
 }
 .cta-section #highlight-description {
     font-style: italic;
@@ -36,4 +52,8 @@ div.infos-course-cards, div.subjects-cards {
     justify-content: center;
     flex-wrap: wrap;
     gap: 13px 25px;
+}
+
+.cta-section .material-symbols-rounded {
+    color: #00a035;
 }
