@@ -3,8 +3,24 @@ section {
     text-align: center;
 }
 
-.hero-section h1 {
-    font-size: 3.5rem;
+/* DESKTOP FIRST */
+h1 {
+  font-size: 4.25rem;
+}
+h2 {
+  font-size: 2.74rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+.section-description {
+    font-size: 1.18rem;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
 }
 
 .hero-section .features-list {
@@ -19,7 +35,6 @@ section {
     font-size: 5.5rem;
 }
 
-
 article.info-card{
     background-color: var(--DARK-card-color);
     padding: 20px;
@@ -27,10 +42,10 @@ article.info-card{
 
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
-
-.hero-section {
-    display: grid;
+article.info-card span {
+    margin-left: 10px;
 }
 
 div.infos-course-cards, div.subjects-cards {
@@ -39,9 +54,24 @@ div.infos-course-cards, div.subjects-cards {
     align-items: center;
 }
 
+.motivation-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.motivation-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.motivation-media-row img {
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px var(--DEFAULT-shadow-title-color);
+}
 .cta-section #highlight-title {
     color: var(--DARK-button-color);
-    text-shadow: 0 0 14px var(--DARK-shadow-color);
+    text-shadow: 0 0 0.7em var(--DARK-shadow-color);
 }
 .cta-section #highlight-description {
     font-style: italic;

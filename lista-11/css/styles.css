@@ -8,17 +8,22 @@
     --DEFAULT-title-color: #73B0D9;
     --DEFAULT-shadow-title-color: #644da5;
 
+    /* MODO DARK */
     --DARK-background-color: #212121;
     --DARK-card-color: #ffffff21;
     --DARK-text-color: #ffffff;
     --DARK-button-color: #ff0067;
     --DARK-shadow-color: #911044;
-    /*
+    
+    /* MODO LIGHT */
+    /*             
     --LIGHT-background-color: #ffffff;
     --LIGHT-card-color: #aaaaaa; mudar
     --LIGHT-text-color: #;
     --LIGHT-button-color: #;
     */
+
+
 }
 /* RESET CSS */
 * {
@@ -35,9 +40,19 @@
 body {
   background-color: var(--DARK-background-color);
 }
+
+/* ALINHAMENTOS PADRÃO */
+header, main {
+  margin: 0 4.1rem;
+}
+footer {
+  padding: 0 4.1rem;
+}
+
+/* ESTILOS DE TEXTOS PADRÃO */
 h1, h2 {
   color: var(--DEFAULT-title-color);
-  text-shadow: 1.2px 1.2px 2.75px var(--DEFAULT-shadow-title-color);
+  text-shadow: 0 0 0.14em var(--DEFAULT-shadow-title-color);
 }
 p {
   font-weight: 500;
@@ -45,8 +60,8 @@ p {
 
 header {
   background-color: var(--DARK-background-color);
-  margin: 1.09rem 2rem;
-  padding: 10px 55px;
+  margin: 1.09rem 4.1rem;
+  padding: 10px 0;
   border-radius: 30px;
   font-weight: 600;
   display: flex;
@@ -55,11 +70,11 @@ header {
   flex-wrap: nowrap;
 }
 header img {
-  width: 50px;
+  width: 2.625rem;
 }
 header ul {
   display: flex;
-  gap: 20px;
+  gap: 21px;
   flex-wrap: nowrap;
 }
 header .page-link:hover {
