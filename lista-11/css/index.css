@@ -65,10 +65,25 @@ div.infos-course-cards, div.subjects-cards {
 }
 
 .motivation-media-row img {
-    width: 450px;
     border-radius: 10px;
-    box-shadow: 0 0 6px var(--DEFAULT-shadow-title-color);
+    box-shadow: 0 1px 6px var(--DEFAULT-shadow-title-color);
 }
+
+
+.testimonial-card {
+    background-color: var(--DARK-card-color);
+    
+}
+.testimonial-card .author-info{ 
+    display: flex;
+}
+.author-details {
+    text-align: left;
+}
+.author-details > cite, .author-details > span {
+    display: block;
+}
+
 .cta-section #highlight-title {
     color: var(--DARK-button-color);
     text-shadow: 0 0 0.7em var(--DARK-shadow-color);

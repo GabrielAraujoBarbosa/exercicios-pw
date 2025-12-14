@@ -10,10 +10,11 @@
 
     /* MODO DARK */
     --DARK-background-color: #212121;
-    --DARK-card-color: #ffffff21;
+    --DARK-card-color: #ffffff10;
     --DARK-text-color: #ffffff;
     --DARK-button-color: #ff0067;
     --DARK-shadow-color: #911044;
+    --DARK-footer-icon: #c2c2c2;
     
     /* MODO LIGHT */
     /*             
@@ -48,7 +49,9 @@ header, main {
 footer {
   padding: 0 4.1rem;
 }
-
+a, li, ul, span, small {
+  color: inherit;
+}
 /* ESTILOS DE TEXTOS PADRÃO */
 h1, h2 {
   color: var(--DEFAULT-title-color);
@@ -116,8 +119,30 @@ header #subscribe-link:hover {
   text-shadow: 0 0 10px var(--DARK-button-color);
 }
 
+footer h2 {
+  color: var(--DARK-footer-icon);
+  text-shadow: none; 
+}
+footer h3 {
+  color: var(--DARK-button-color);
+}
+
 div.footer-brand{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.brand-area img {
+  display: block;
+}
+
+.footer-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--DARK-footer-icon);
 }
 
 .brand-area .social-links{
@@ -128,9 +153,16 @@ div.footer-brand{
   width: 30px;
 }
 .social-links a svg g {
-  fill: #c2c2c2;
+  fill: var(--DARK-footer-icon);
 }
 
 .contact-list a svg {
   stroke: var(--DARK-button-color);
+}
+
+.footer-bottom {
+  color: var(--DARK-footer-icon);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
