@@ -43,9 +43,12 @@ body {
 }
 
 /* ALINHAMENTOS PADRÃO */
-header, main {
+header {
   margin: 0 4.1rem;
 }
+main section {
+  padding: 0 4.1rem;
+} 
 footer {
   padding: 0 4.1rem;
 }
@@ -71,9 +74,6 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-}
-header img {
-  width: 2.625rem;
 }
 header ul {
   display: flex;
@@ -162,6 +162,7 @@ div.footer-brand{
 
 .footer-bottom {
   color: var(--DARK-footer-icon);
+  box-shadow: inset 0 10px 4px -10px var(--DARK-shadow-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
