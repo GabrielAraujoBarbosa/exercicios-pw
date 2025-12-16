@@ -3,6 +3,55 @@ section {
     text-align: center;
 }
 
+/* 1ª MEDIA QUERY - tela ajustada no desktop
+    LARGURA DE TELA: 970px;
+
+    hero-container {
+    colocar em coluna
+    }
+
+    features-bar {
+    começar a diminuir
+    }
+
+    invite-section, subjects-section {
+     começar a diminuir cards
+    }
+
+    motivations {
+    começar a diminuir imagens
+    }
+
+    testimonials {
+    começar a diminuir cards
+    }
+
+    footer {
+    começar a diminuir icones e fonte
+    }
+
+2ª MEDIA QUERY - tela para tablets/smartphones
+    LARGURA DE TELA: 722px;
+    
+    header {
+    remover
+    colocar menu hamburguer
+    }
+
+    invite-section, subjects-section {
+     colocar cards em coluna
+    }
+
+    motivations {
+    colocar rows em coluna
+    }
+
+    footer {
+    colocar em colunas
+    }
+
+*/
+
 /* DESKTOP FIRST */
 h1 {
   font-size: 4.25rem;
@@ -20,21 +69,23 @@ h3 {
 .hero-section {
     padding: 0;
 }
-
 .hero-section .hero-container {
-    padding: 0 4.1rem;
-    background-image: url(../assets/index/etecia-entrada.jpg);
+    text-align: left;
+    padding: 150px var(--DESKTOP-page-side-spacing) 0 var(--DESKTOP-page-side-spacing);
+
+    background-image: url(../assets/index/hero/etecia-entrada.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    
     display: flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
 }
 
 .hero-section .features-bar {
+    padding: 0 var(--DESKTOP-page-side-spacing);
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -83,6 +134,9 @@ div.infos-course-cards, div.subjects-cards {
 }
 .testimonial-card .author-info{ 
     display: flex;
+}
+.author-info > img {
+    border-radius: 100%;
 }
 .author-details {
     text-align: left;
