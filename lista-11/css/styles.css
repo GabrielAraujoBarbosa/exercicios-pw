@@ -151,7 +151,7 @@ div.footer-brand{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
 }
 
 .brand-area img {
